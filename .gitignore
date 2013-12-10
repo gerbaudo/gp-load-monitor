@@ -1,21 +1,7 @@
 # tmp files from emacs
 *~
 
-# Object files
-*.o
-*.ko
+# rrd outputs
+*.rrd
+*.png
 
-# Libraries
-*.lib
-*.a
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
