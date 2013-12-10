@@ -15,3 +15,13 @@ ${RRDTOOL} create ${RRDFILE} \
  RRA:MAX:0.5:12:1440 \
  RRA:AVERAGE:0.5:1:1440
 
+# second rrdb to store find timings
+RRDFILE="/home/gerbaudo/load_monitor/time_find.rrd"
+${RRDTOOL} create ${RRDFILE} \
+ --start N --step 300 \
+ DS:home-find-time:GAUGE:600:0.0:10.0 \
+ DS:gdata-find-time:GAUGE:600:0.0:10.0 \
+ RRA:MIN:0.5:12:1440 \
+ RRA:MAX:0.5:12:1440 \
+ RRA:AVERAGE:0.5:1:1440
+
