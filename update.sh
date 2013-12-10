@@ -1,16 +1,7 @@
 #!/bin/sh
 
 
-#The rrdb was created with the command below:
-
-# rrdtool create lstime.rrd \
-# --start N \
-# --step 300 \
-# DS:home:GAUGE:600:0.0:60.0 \
-# DS:gdata:GAUGE:600:0.0:60.0 \
-# RRA:AVERAGE:0.5:1:1440 \
-# RRA:MIN:0.5:12:1440 \
-# RRA:MAX:0.5:12:1440
+#The rrdb was created with create_rrd.sh
 
 RRDTOOL="/usr/bin/rrdtool"
 
